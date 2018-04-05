@@ -46,10 +46,11 @@ predictions = pipeline.predict(msg_test)
 ################################################################
 ################### CLASSIFICATION REPORT ######################
 ################################################################
-
+print("CLASSIFICATION REPORT")
 from sklearn.metrics import classification_report
 print(classification_report(predictions,label_test))
 
 
 from sklearn.metrics import accuracy_score
+print("ACCURACY")
 print(sklearn.metrics.accuracy_score(predictions,label_test))
